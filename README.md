@@ -12,7 +12,22 @@ ESP32(C3?) microcontroller. PCB designed in KiCad. Programming done with espress
 
 ESPRESSIF has layouts of their breakout boards. We can copy and then modify a development board layout. 
 
+## KiCad
+
+All relevant kicad files can be found in `convention_badge_kicad`. We'll probably start by designing a basic board that would just serve as a platform for the esp32-c3 xiao and an e-paper breakoutboard with pin headers. After that, we can scale up complexity and embed the uC on the pcb badge and choose whether or not to design the badge with an FCC connection. 
+
+One reference we are using is Notre Dame's build-a-board workshop pcb design which features a working esp32-c3 breakout board design.
+
+Build-A-Board Credits: https://engineering.nd.edu/news/electrical-engineering-students-create-circuit-boards-in-inaugural-build-a-board-workshop/
+
+
 ## Display options
+
+ESP32C3:
+Datasheet (contains schematics): https://documentation.espressif.com/esp32-c3-wroom-02_datasheet_en.pdf
+
+- could go with xiao module as a backup
+- could break out all available gpios to exposed vias to double as a breakout board for future use
 
 2.13 inch e-Paper Display Module: https://www.buydisplay.com/black-2-13-inch-e-paper-122x250-display-module-for-arduino-raspberry-pi
 
@@ -48,3 +63,6 @@ Will likely have to pay for at least partial assembly.
 Claude session resulted in price estimate of ~$32 per board including assembly and shipping on an order of 5.
 
 To minimize price, we can design a one sided board (the back) and hand solder buttons and attach the scren on the front. I don't think that prevents solder mask designs on the front. 
+
+
+
