@@ -23,13 +23,15 @@ Build-A-Board Credits: https://engineering.nd.edu/news/electrical-engineering-st
 
 ## Display options
 
-ESP32C3:
+### ESP32C3
 Datasheet (contains schematics): https://documentation.espressif.com/esp32-c3-wroom-02_datasheet_en.pdf
 
 - could go with xiao module as a backup
 - could break out all available gpios to exposed vias to double as a breakout board for future use
 
-2.13 inch e-Paper Display Module: https://www.buydisplay.com/black-2-13-inch-e-paper-122x250-display-module-for-arduino-raspberry-pi
+### 2.13 inch e-Paper Display Module
+
+ https://www.buydisplay.com/black-2-13-inch-e-paper-122x250-display-module-for-arduino-raspberry-pi
 
 Datasheet: https://www.buydisplay.com/download/manual/ER-EPD0213-2-5076_Datasheet.pdf
 
@@ -39,7 +41,27 @@ UC8251 Controller: https://www.buydisplay.com/download/ic/UC8251.pdf
 - has mounting holes that would be easy to use for the badge
 - tutorial exists online for developing an entire display driver for this specific board.
 
-2.6 inch e-Paper Display Pannel: https://www.buydisplay.com/2-6-inch-e-ink-152x296-e-paper-display-panel-red-white-black-spi
+The raw pannel: https://www.buydisplay.com/graphic-2-13-inch-122x250-electronic-paper-display-manufacturers
+
+### 2.9 inch e-Paper Display Module
+
+* probably the best considering size and scalability
+
+https://www.buydisplay.com/black-2-9-inch-e-paper-display-module-for-arduino-raspberry-pi#
+
+Datasheet: https://www.buydisplay.com/download/manual/ER-EPD029-2-5073_Datasheet.pdf
+
+SSD1680 Controller: https://www.buydisplay.com/download/ic/SSD1680.pdf
+
+- development board that is slightly larger and probably better for display purposes
+- option for a breakout board and raw board if we decide to integrate pannel regulation into badge
+
+The raw pannel: https://www.buydisplay.com/serial-2-9-inch-e-paper-screen-128x296-for-electronic-shelf-label-lcd
+
+
+### 2.6 inch e-Paper Display Pannel
+
+https://www.buydisplay.com/2-6-inch-e-ink-152x296-e-paper-display-panel-red-white-black-spi
 
 Datasheet: https://www.buydisplay.com/download/manual/ER-EPD026A1-1_Datasheet.pdf
 
