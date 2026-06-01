@@ -86,5 +86,17 @@ Claude session resulted in price estimate of ~$32 per board including assembly a
 
 To minimize price, we can design a one sided board (the back) and hand solder buttons and attach the scren on the front. I don't think that prevents solder mask designs on the front. 
 
+## Design Notes
+
+### PCB_BadgeV1
+
+This board will utilize the XIAO ESP32 C3 and an 2.9 inch e-Paper Display Module for functionality. Both will be soldered to the badge using header pins. A 3.7V lipo battery will be soldered to the underside of the xiao module as I don't have a way to solder the pads directly to the badge board. The board will also have some buttons on remaining usable gpio pins. 
+
+#### Notable Resources
+
+XIAO Getting Started: https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/
+
+Display Datasheet: Datasheet: https://www.buydisplay.com/download/manual/ER-EPD029-2-5073_Datasheet.pdf
+
 
 
