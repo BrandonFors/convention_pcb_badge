@@ -3751,7 +3751,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical"
+		(property "Footprint" "2_Displays:2.9_e_paper_ER-EPD029-2-5073"
 			(at 152.4 62.23 0)
 			(effects
 				(font
