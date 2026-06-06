@@ -1959,6 +1959,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 64.77) (xy 147.32 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2530d584-a772-491a-ae26-c515271dd95f")
+	)
+	(wire
+		(pts
 			(xy 93.98 54.61) (xy 106.68 54.61)
 		)
 		(stroke
@@ -1966,16 +1976,6 @@
 			(type default)
 		)
 		(uuid "32e99cbd-f4cf-4734-a861-0e279df560b8")
-	)
-	(wire
-		(pts
-			(xy 142.24 64.77) (xy 147.32 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "340be0e1-6aa6-4460-94dc-7c5528f98109")
 	)
 	(wire
 		(pts
@@ -2368,7 +2368,7 @@
 		(uuid "5dae9d50-ecda-40a4-bf53-56fe12b01073")
 	)
 	(label "VDD"
-		(at 142.24 64.77 0)
+		(at 138.43 64.77 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2912,7 +2912,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal"
 			(at 172.72 33.02 0)
 			(effects
 				(font
