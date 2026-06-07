@@ -92,11 +92,18 @@ To minimize price, we can design a one sided board (the back) and hand solder bu
 
 This board will utilize the XIAO ESP32 C3 and an 2.9 inch e-Paper Display Module for functionality. Both will be soldered to the badge using header pins. A 3.7V lipo battery will be soldered to the underside of the xiao module as I don't have a way to solder the pads directly to the badge board. The board will also have some buttons on remaining usable gpio pins. 
 
+This board is largely complete and contains support for a 2.9 inch epaper breakout and and esp32 c3 xiao soldered to the board using male header pins. One pin is wired to a voltage divider for battery power readings. The board also has support for 3 standard 6mm buttons which use internal pull up resistors on the esp32-c3. Footprints are mostly for through hole breadboard components purely because I am not space constrained and wanted to design the board for components that I already had on hand to avoid shipping/assembly costs.
+
+The odds are that this board is never manufactured just because the next one will feature more peripherals as it won't be constrained by the pinout of the xiao. V2 will support the esp32-c3 directly on the pcb, based largely on the Build-A-Board pcb mentioned above.
+
+Note: This board does not have decoupling capacitors between the e paper display and the 3.3V xiao supply.
+
 #### Notable Resources
 
 XIAO Getting Started: https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/
 
 Display Datasheet: Datasheet: https://www.buydisplay.com/download/manual/ER-EPD029-2-5073_Datasheet.pdf
 
+### PCB_BadgeV2
 
-
+This board will be 4 layers with support for the esp32-c3 directly on the pcb. Whether or not the board supports the e-paper display directly with no breakout is TBD. I might opt for a hybrid board that supports both the breakout board and the raw screen with solder bridges to enable/disable either set of connections. 
