@@ -9,6 +9,7 @@
 
 //Custom
 #include "board.h"
+#include "hal.h"
 #include "buttons.h"
 
 
@@ -16,8 +17,8 @@
 
 void app_main(void)
 {
+    hal_init();
 
 
-
-
+    while(1) (void) 0;
 }

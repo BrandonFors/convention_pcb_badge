@@ -7,7 +7,7 @@
 typedef enum {
   BUTTON_1 = 1,
   BUTTON_2 = 2,
-  BUTTON_2 = 3,
+  BUTTON_3 = 3,
   NA = 4,
 } ButtonEvent;
 

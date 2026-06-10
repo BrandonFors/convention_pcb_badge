@@ -107,3 +107,13 @@ Display Datasheet: Datasheet: https://www.buydisplay.com/download/manual/ER-EPD0
 ### PCB_BadgeV2
 
 This board will be 4 layers with support for the esp32-c3 directly on the pcb. Whether or not the board supports the e-paper display directly with no breakout is TBD. I might opt for a hybrid board that supports both the breakout board and the raw screen with solder bridges to enable/disable either set of connections. 
+
+
+
+
+
+### Code Development
+
+Notable E-Paper Sections:
+- 9: Operation Flow 
+- 8: Command Description
