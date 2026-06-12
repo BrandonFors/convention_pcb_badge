@@ -108,7 +108,7 @@ Display Datasheet: Datasheet: https://www.buydisplay.com/download/manual/ER-EPD0
 
 This board will be 4 layers with support for the esp32-c3 directly on the pcb. Whether or not the board supports the e-paper display directly with no breakout is TBD. I might opt for a hybrid board that supports both the breakout board and the raw screen with solder bridges to enable/disable either set of connections. 
 
-
+Section 13 of the SSD1680 Datasheet has a diagram of exactly what the 24 pin connector should be wired to.
 
 
 
@@ -117,3 +117,4 @@ This board will be 4 layers with support for the esp32-c3 directly on the pcb. W
 Notable E-Paper Sections:
 - 9: Operation Flow 
 - 8: Command Description
+- 12.1: Timing table and diagram

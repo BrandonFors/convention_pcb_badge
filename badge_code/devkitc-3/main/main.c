@@ -11,14 +11,19 @@
 #include "board.h"
 #include "hal.h"
 #include "buttons.h"
+#include "epaper.h"
 
 
-
+static const char *TAG = "MAIN";
 
 void app_main(void)
 {
     hal_init();
+    buttons_init();
+    epaper_init();
 
 
-    while(1) (void) 0;
+    while(1){
+        ESP_LOGI(TAG, "In forever");
+    };
 }

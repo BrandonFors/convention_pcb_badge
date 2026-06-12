@@ -18,9 +18,9 @@ static volatile uint64_t last_button_time[3] = {0}; // array to hold dobounce ti
 void gpio_isr_handler(void* arg);
 
 void buttons_init(){
-    hal_register_gpio_callback(BUT_1_PIN, gpio_isr_handler, (void *)BUTTON_1);
-    hal_register_gpio_callback(BUT_2_PIN, gpio_isr_handler, (void *)BUTTON_2);
-    hal_register_gpio_callback(BUT_3_PIN, gpio_isr_handler, (void *)BUTTON_3);
+    hal_gpio_register_callback(BUT_1_PIN, gpio_isr_handler, (void *)BUTTON_1);
+    hal_gpio_register_callback(BUT_2_PIN, gpio_isr_handler, (void *)BUTTON_2);
+    hal_gpio_register_callback(BUT_3_PIN, gpio_isr_handler, (void *)BUTTON_3);
 }
 
 //button interrupt function
