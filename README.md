@@ -108,7 +108,7 @@ Display Datasheet: Datasheet: https://www.buydisplay.com/download/manual/ER-EPD0
 
 This board will be 4 layers with support for the esp32-c3 directly on the pcb. Whether or not the board supports the e-paper display directly with no breakout is TBD. I might opt for a hybrid board that supports both the breakout board and the raw screen with solder bridges to enable/disable either set of connections. 
 
-
+Section 13 of the SSD1680 Datasheet has a diagram of exactly what the 24 pin connector should be wired to.
 
 
 
@@ -117,3 +117,15 @@ This board will be 4 layers with support for the esp32-c3 directly on the pcb. W
 Notable E-Paper Sections:
 - 9: Operation Flow 
 - 8: Command Description
+- 12.1: Timing table and diagram
+
+Using EastRising's example code and the SD1680 documentation, I've got a working program that prints out an example image onto the screen. The display is electronically configured to be used vertically, but horizontal use is easily fixed with some clever frame buffer software. I'm just going to make it cycle through preconfigured bitmaps with the buttons to control the cycle.
+
+Bitmap Img Converter: https://javl.github.io/image2cpp/
+
+LUT Experiment Notes:
+Refresh by default is pretty slow at 1.5 sec
+- May be able to cut down with custom lut -> tradeoff is quality bc OTP lut does a full cycle on all pixels to fully clear them
+Custom lut provided by east rising results in 0.9 sec refresh but leaves a faded img of the previous frame
+
+In the future I can diff two frame buffers to find the changed pixels/sections and then use the xram and yram start/end points to selectively update the screen to avoid some of the anoying refresh.

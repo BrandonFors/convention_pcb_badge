@@ -6,6 +6,14 @@
     "--background-index",
     "--query-driver=**",
     "--compile-commands-dir=c:\\Users\\bfcla\\Programming_Projects\\Embedded_Systems\\convention_pcb_badge\\badge_code\\devkitc-3\\build"
-],
-"idf.currentSetup": "C:\\Users\\bfcla\\esp\\v5.5.2\\esp-idf"
+  ],
+  "idf.currentSetup": "C:\\Users\\bfcla\\esp\\v5.5.2\\esp-idf",
+  "idf.flashType": "UART",
+  "idf.portWin": "COM4",
+  "idf.openOcdConfigs": [
+    "board/esp32-wrover-kit-3.3v.cfg"
+  ],
+  "idf.customExtraVars": {
+    "IDF_TARGET": "esp32"
+  }
 }

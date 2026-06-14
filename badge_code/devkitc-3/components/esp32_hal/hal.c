@@ -1,7 +1,24 @@
 #include <stdint.h>
 #include "board.h"
+#include "freertos/FreeRTOS.h"
 
+#include "driver/spi_master.h"
 #include "driver/gpio.h"
+#include "rom/ets_sys.h"
+#include "esp_err.h"
+#include "esp_log.h"
+
+#include "hal.h"
+
+static const char *TAG = "HAL";
+
+static spi_device_handle_t spi_handle;
+static spi_bus_config_t spi_config;
+static spi_transaction_t transaction;
+static spi_device_interface_config_t spi_device_config;
+
+static uint8_t spi_sendbuf;
+
 
 //init spi device
 //spi write 
@@ -12,6 +29,44 @@
 
 void hal_init(){
 
+    //configure SPI
+    ESP_LOGI(TAG, "Initializing SPI");
+
+
+    spi_config = (spi_bus_config_t){ //configure for spi communcation for led row
+        .mosi_io_num = MOSI_PIN,
+        .miso_io_num = -1,
+        .sclk_io_num = SCLK_PIN,
+    };
+
+    spi_device_config = (spi_device_interface_config_t){
+        .clock_speed_hz = SPI_SPEED, // MAX clock speed is 20MHz
+        .mode = 0,
+        .spics_io_num = -1, // handling CS manually (just connected to 5V on board)
+        .queue_size = 1,
+    };
+
+    transaction = (spi_transaction_t){
+        .length = 8,
+        .tx_buffer = &spi_sendbuf,
+        .rx_buffer = NULL,
+    };
+    
+    ESP_LOGI(TAG, "Initializing SPI Bus");
+    ESP_ERROR_CHECK(spi_bus_initialize(SPI2_HOST, &spi_config, SPI_DMA_CH_AUTO));
+
+    ESP_LOGI(TAG, "Adding SPI Device");
+    ESP_ERROR_CHECK(spi_bus_add_device(SPI2_HOST, &spi_device_config, &spi_handle));
+
+    ESP_LOGI(TAG, "Initializing GPIO Pins");
+    
+    //configure spi related gpios
+    gpio_set_direction(CS_PIN, GPIO_MODE_OUTPUT);
+    gpio_set_direction(DC_PIN, GPIO_MODE_OUTPUT);
+    gpio_set_direction(RET_PIN, GPIO_MODE_OUTPUT); 
+    gpio_set_direction(BUSY_PIN, GPIO_MODE_INPUT);
+    gpio_pulldown_dis(BUSY_PIN);
+    gpio_pullup_dis(BUSY_PIN);
     //configure button 1 
     gpio_reset_pin(BUT_1_PIN);
     gpio_set_direction(BUT_1_PIN, GPIO_MODE_INPUT);
@@ -43,7 +98,30 @@ void hal_init(){
 
 }
 
-void hal_register_gpio_callback(uint8_t pin, void *callback, void *args){
+void hal_gpio_register_callback(uint8_t pin, void *callback, void *args){
     //set callback functions for button interrupts
     gpio_isr_handler_add(pin, callback, args);
+    gpio_intr_enable(pin);
+}
+
+void hal_gpio_set(uint8_t pin, hal_gpio_out_t output){
+    gpio_set_level(pin, output);
+}
+
+uint8_t hal_gpio_read(uint8_t pin){
+    return gpio_get_level(pin);
+}
+
+// could add a multiple byte function later once everything works
+void hal_spi_send_byte(uint8_t byte){
+    spi_sendbuf = byte;
+    spi_device_transmit(spi_handle, &transaction);
+}
+
+void hal_delay_us(uint32_t us){
+    ets_delay_us(us);
+}
+
+void hal_delay_ms(uint32_t ms){
+    vTaskDelay(ms / portTICK_PERIOD_MS);
 }
