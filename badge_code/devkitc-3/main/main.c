@@ -12,9 +12,16 @@
 #include "hal.h"
 #include "buttons.h"
 #include "epaper.h"
+#include "imgs.h"
 
+
+
+#define NUM_BITMAPS 2
 
 static const char *TAG = "MAIN";
+
+static const unsigned char *bitmap_arr[] = {irishsat_bitmap, gImage};
+static uint8_t bitmap_idx = 0;
 
 void app_main(void)
 {
@@ -23,7 +30,14 @@ void app_main(void)
     epaper_init();
 
 
+
+
     while(1){
-        ESP_LOGI(TAG, "In forever");
+        ESP_LOGI(TAG, "Writing and Pushing Bitmap");
+        epaper_write_bitmap(bitmap_arr[bitmap_idx++]);
+        bitmap_idx %= NUM_BITMAPS;
+        epaper_push_frame();
+        ESP_LOGI(TAG, "Spinning");
+        hal_delay_ms(5000);
     };
 }
