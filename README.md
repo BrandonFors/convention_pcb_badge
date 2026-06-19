@@ -110,6 +110,23 @@ This board will be 4 layers with support for the esp32-c3 directly on the pcb. W
 
 Section 13 of the SSD1680 Datasheet has a diagram of exactly what the 24 pin connector should be wired to.
 
+10k PU with a 1uF capacitor on the EN line creates a RC time constant of 10ms, allowing EN to stay low on to 3.3V stabalizes so the chip boots properly.
+
+I need some way to handle the battery managment of this design. I think I might need a battery charging IC.
+
+Need to make sure that parts are in stock in jlcpcb
+
+https://jlcpcb.com/parts
+
+Going to create a charging/bms circuit using:
+- TP4056
+- DW10A
+- FS8205A
+
+Then I can use TLV75733P for voltage regulation and hook everything to the output 3.3V from there.
+
+
+
 
 
 ### Code Development
