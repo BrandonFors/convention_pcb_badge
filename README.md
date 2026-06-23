@@ -125,7 +125,7 @@ Going to create a charging/bms circuit using:
 
 Then I can use TLV75733P for voltage regulation and hook everything to the output 3.3V from there.
 
-
+Added breakout pins for debugging purposes
 
 
 
