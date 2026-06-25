@@ -127,6 +127,7 @@ Then I can use TLV75733P for voltage regulation and hook everything to the outpu
 
 Added breakout pins for debugging purposes
 
+Main section is 54 tall and 90 wide -> top and bottom pannels can be 19 tall w/ 3mm gaps between board and pannels
 
 
 ### Code Development
