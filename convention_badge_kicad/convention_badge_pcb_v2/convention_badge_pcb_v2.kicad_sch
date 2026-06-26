@@ -7824,7 +7824,7 @@
 				)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "RED_LED"
 			(at 66.3575 149.86 0)
 			(effects
 				(font
@@ -7860,6 +7860,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 64.77 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2286"
 			(at 64.77 154.94 0)
 			(effects
 				(font
@@ -7967,7 +7976,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "10uf"
+		(property "Value" "10uF"
 			(at 130.556 47.371 0)
 			(effects
 				(font
@@ -7976,7 +7985,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:C_0603"
+		(property "Footprint" "PCM_JLCPCB:C_CASE-A-3216-18(mm)"
 			(at 129.54 43.18 0)
 			(effects
 				(font
@@ -7995,6 +8004,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 129.54 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7171"
 			(at 129.54 43.18 0)
 			(effects
 				(font
@@ -8073,6 +8091,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C21190"
+			(at 195.58 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "59e0e76e-6d00-4b63-a3db-13d1878749e1")
 		)
@@ -8093,7 +8120,7 @@
 		(at 105.41 175.26 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(fields_autoplaced yes)
@@ -8250,7 +8277,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:C_0603"
+		(property "Footprint" "PCM_JLCPCB:C_CASE-B-3528-21(mm)"
 			(at 107.95 85.09 0)
 			(effects
 				(font
@@ -8269,6 +8296,15 @@
 			)
 		)
 		(property "Description" "capacitor, small US symbol"
+			(at 107.95 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C16133"
 			(at 107.95 85.09 0)
 			(effects
 				(font
@@ -8470,6 +8506,15 @@
 			)
 		)
 		(property "Description" "1A Low IQ Small Size Low Dropout Voltage Regulator, Fixed Output 3.3V, SOT-23-5"
+			(at 156.21 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" " C485517"
 			(at 156.21 74.93 0)
 			(effects
 				(font
@@ -8703,7 +8748,7 @@
 		(at 123.19 30.48 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(uuid "218d71f9-296d-4551-bbe5-4b4ca4f9991e")
@@ -8787,7 +8832,7 @@
 		(at 93.98 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(fields_autoplaced yes)
@@ -8858,9 +8903,9 @@
 		(at 148.59 191.77 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "241dd8d0-2ca0-499c-b125-9e6a240bfdfc")
 		(property "Reference" "D5"
 			(at 150.1775 184.15 0)
@@ -8975,6 +9020,15 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 114.3 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 114.3 191.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9157,7 +9211,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:R_0603"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 35.306 170.434 90)
 			(effects
 				(font
@@ -9176,6 +9230,15 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 34.29 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17414"
 			(at 34.29 170.18 0)
 			(effects
 				(font
@@ -9473,7 +9536,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:C_0603"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 165.1 78.74 0)
 			(effects
 				(font
@@ -9492,6 +9555,15 @@
 			)
 		)
 		(property "Description" "capacitor, small US symbol"
+			(at 165.1 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1607"
 			(at 165.1 78.74 0)
 			(effects
 				(font
@@ -9569,6 +9641,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C23186"
+			(at 68.58 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8d080d12-347b-4e64-9c00-3a8f7202aab0")
 		)
@@ -9602,7 +9683,7 @@
 				)
 			)
 		)
-		(property "Value" "LP0404N3T5G"
+		(property "Value" "AO3401A"
 			(at 118.11 68.58 90)
 			(effects
 				(font
@@ -9610,7 +9691,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-883"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 115.57 69.85 0)
 			(effects
 				(font
@@ -9657,6 +9738,15 @@
 		)
 		(property "Sim.Pins" "1=D 2=G 3=S"
 			(at 133.35 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C20917"
+			(at 118.11 74.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9819,7 +9909,7 @@
 		(at 134.62 175.26 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(uuid "3b3928bb-6519-4154-9c55-9909c8b47f46")
@@ -9934,6 +10024,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C22775"
+			(at 238.76 33.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "88e6efc1-2bf1-4537-9c3e-ce121202851a")
 		)
@@ -10004,6 +10103,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C4190"
+			(at 182.88 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e1330b75-faa7-4920-b042-a25e92c3845c")
 		)
@@ -10046,7 +10154,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:C_0603"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 231.14 36.83 0)
 			(effects
 				(font
@@ -10065,6 +10173,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 231.14 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1590"
 			(at 231.14 36.83 0)
 			(effects
 				(font
@@ -10273,6 +10390,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C21190"
+			(at 148.59 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "eb35eac2-b7aa-484b-b7ea-e773a4b26531")
 		)
@@ -10334,6 +10460,15 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 158.75 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 158.75 191.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10405,6 +10540,15 @@
 		)
 		(property "Description" "KMR231GLFS"
 			(at 50.8 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" " C318884"
+			(at 50.8 181.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10551,6 +10695,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C2765186"
+			(at 36.83 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "S1"
 			(uuid "349a4f6c-11aa-4a3d-b78e-4b7b2425b871")
 		)
@@ -10629,7 +10782,7 @@
 				)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "YEL_LED"
 			(at 141.2875 36.83 0)
 			(effects
 				(font
@@ -10673,6 +10826,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C2287"
+			(at 139.7 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "50b4df31-04b6-4c86-a216-6d44a0001ef2")
 		)
@@ -10706,7 +10868,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "10uf"
+		(property "Value" "10uF"
 			(at 248.92 38.862 0)
 			(effects
 				(font
@@ -10715,7 +10877,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:C_0603"
+		(property "Footprint" "PCM_JLCPCB:C_CASE-A-3216-18(mm)"
 			(at 246.38 36.83 0)
 			(effects
 				(font
@@ -10734,6 +10896,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 246.38 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7171"
 			(at 246.38 36.83 0)
 			(effects
 				(font
@@ -11010,7 +11181,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" " C318884"
 			(at 106.68 133.35 90)
 			(effects
 				(font
@@ -11058,7 +11229,7 @@
 				)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "RED_LED"
 			(at 141.2875 45.72 0)
 			(effects
 				(font
@@ -11094,6 +11265,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 139.7 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2286"
 			(at 139.7 50.8 0)
 			(effects
 				(font
@@ -11162,6 +11342,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 210.82 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C908265"
 			(at 210.82 59.69 0)
 			(effects
 				(font
@@ -11268,7 +11457,7 @@
 		(at 67.31 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(fields_autoplaced yes)
@@ -11354,7 +11543,7 @@
 		(at 162.56 175.26 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(fields_autoplaced yes)
@@ -11445,7 +11634,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:R_0603"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 118.11 85.09 0)
 			(effects
 				(font
@@ -11464,6 +11653,15 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
+			(at 118.11 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17414"
 			(at 118.11 85.09 0)
 			(effects
 				(font
@@ -11606,6 +11804,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" " C351410"
+			(at 210.82 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "43987a69-91f2-4c34-b3a6-19e27f91fa6b")
 		)
@@ -11704,6 +11911,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C2480"
+			(at 125.73 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "50d11adc-1216-4dc6-9050-5446ab1f50cb")
 		)
@@ -11724,7 +11940,7 @@
 		(at 93.98 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(fields_autoplaced yes)
@@ -11896,7 +12112,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:R_0603"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 78.486 183.134 90)
 			(effects
 				(font
@@ -11915,6 +12131,15 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 77.47 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17414"
 			(at 77.47 182.88 0)
 			(effects
 				(font
@@ -11966,7 +12191,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:C_0603"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 17.78 83.82 0)
 			(effects
 				(font
@@ -11985,6 +12210,15 @@
 			)
 		)
 		(property "Description" "capacitor, small US symbol"
+			(at 17.78 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1590"
 			(at 17.78 83.82 0)
 			(effects
 				(font
@@ -12036,7 +12270,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:C_0603"
+		(property "Footprint" "PCM_JLCPCB:C_CASE-A-3216-18(mm)"
 			(at 27.94 83.82 0)
 			(effects
 				(font
@@ -12055,6 +12289,15 @@
 			)
 		)
 		(property "Description" "capacitor, small US symbol"
+			(at 27.94 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7171"
 			(at 27.94 83.82 0)
 			(effects
 				(font
@@ -12124,6 +12367,15 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 74.93 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 74.93 154.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12230,7 +12482,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "0.1uf"
+		(property "Value" "0.1uF"
 			(at 119.126 137.541 0)
 			(effects
 				(font
@@ -12239,7 +12491,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:C_0603"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 118.11 133.35 0)
 			(effects
 				(font
@@ -12258,6 +12510,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 118.11 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1590"
 			(at 118.11 133.35 0)
 			(effects
 				(font
@@ -12299,7 +12560,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "1uf"
+		(property "Value" "1uF"
 			(at 35.306 188.341 0)
 			(effects
 				(font
@@ -12308,7 +12569,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:C_0603"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 34.29 184.15 0)
 			(effects
 				(font
@@ -12327,6 +12588,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 34.29 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15849"
 			(at 34.29 184.15 0)
 			(effects
 				(font
@@ -12433,7 +12703,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "0.1uf"
+		(property "Value" "0.1uF"
 			(at 61.976 185.801 0)
 			(effects
 				(font
@@ -12442,7 +12712,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:C_0603"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 60.96 181.61 0)
 			(effects
 				(font
@@ -12461,6 +12731,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 60.96 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1590"
 			(at 60.96 181.61 0)
 			(effects
 				(font
@@ -12597,6 +12876,15 @@
 			)
 		)
 		(property "Description" "ESP32-C3-WROOM-02 is a general-purpose Wi-Fi and Bluetooth LE module. This module features a rich set of peripherals and high performance, which makes it an ideal choice for smart home, industrial automation, health care, consumer electronics, etc."
+			(at 49.53 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2944070"
 			(at 49.53 46.99 0)
 			(effects
 				(font
@@ -12962,7 +13250,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:C_0603"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 138.43 78.74 0)
 			(effects
 				(font
@@ -12981,6 +13269,15 @@
 			)
 		)
 		(property "Description" "capacitor, small US symbol"
+			(at 138.43 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1607"
 			(at 138.43 78.74 0)
 			(effects
 				(font
@@ -13009,9 +13306,9 @@
 		(at 104.14 191.77 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "e46287fe-347c-4eb3-bb9f-868e53afbe43")
 		(property "Reference" "D4"
 			(at 105.7275 184.15 0)
@@ -13334,6 +13631,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" " C318884"
+			(at 22.86 182.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "6aaeae38-0131-47b1-8e02-343f8f374ad1")
 		)
@@ -13401,6 +13707,15 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 148.59 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 148.59 50.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13477,6 +13792,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C23186"
+			(at 74.93 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fb432c5b-9700-4f7b-ad73-b6e48f2cd4fd")
 		)
@@ -13539,6 +13863,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 271.78 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C173752"
 			(at 271.78 35.56 0)
 			(effects
 				(font
