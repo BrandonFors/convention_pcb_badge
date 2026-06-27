@@ -129,6 +129,7 @@ Added breakout pins for debugging purposes
 
 Main section is 54 tall and 90 wide -> top and bottom pannels can be 19 tall w/ 3mm gaps between board and pannels
 
+Hex design is 17.5mm tall and 88.1 mm wide
 
 ### Code Development
 
