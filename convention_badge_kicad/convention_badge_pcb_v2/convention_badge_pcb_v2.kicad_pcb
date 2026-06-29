@@ -100,6 +100,8 @@
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
 		(tenting front back)
+		(aux_axis_origin 109.6 149)
+		(grid_origin 109.6 149)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_575555ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
@@ -4396,7 +4398,7 @@
 	(footprint "LOGO"
 		(layer "F.Cu")
 		(uuid "6aff794f-d470-431f-ae1a-1071f2264809")
-		(at 190 122.8)
+		(at 190.2 123)
 		(property "Reference" "G***"
 			(at 0 0 0)
 			(layer "F.SilkS")
@@ -5330,6 +5332,19 @@
 				)
 			)
 		)
+		(property "LCSC" "C2337"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f313261f-2017-4c35-bb66-041f3b577fc5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/225a8c9d-1f07-416c-a000-3247258bb743")
 		(sheetname "/")
@@ -6247,6 +6262,19 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c5ecfdf7-363c-42a5-9904-5a948b5d9697")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/9e36fce9-e82b-47d3-bb9d-971fba46ec32")
 		(sheetname "/")
@@ -7132,6 +7160,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fb4d3a28-722f-43a5-b6b6-cb42cbeddfb3")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -10324,7 +10365,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" " C318884"
+		(property "LCSC" "C318884"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -10673,7 +10714,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C1590"
+		(property "LCSC" "C14663"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -10891,7 +10932,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" " C485517"
+		(property "LCSC" "C485517"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -11255,7 +11296,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C1590"
+		(property "LCSC" "C14663"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -12152,7 +12193,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C2287"
+		(property "LCSC" "C2290"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -13687,7 +13728,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" " C351410"
+		(property "LCSC" "C351410"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -15840,7 +15881,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" " C318884"
+		(property "LCSC" "C318884"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -17641,7 +17682,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C1590"
+		(property "LCSC" "C14663"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -18826,7 +18867,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C1607"
+		(property "LCSC" "C23630"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -19504,7 +19545,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C1607"
+		(property "LCSC" "C23630"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -19924,7 +19965,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C1590"
+		(property "LCSC" "C14663"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -20384,7 +20425,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" " C318884"
+		(property "LCSC" "C318884"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
