@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-#include "esp_timer.h"
 #include "driver/gptimer.h"
 #include "esp_log.h"
 #include "esp_err.h"
@@ -26,9 +25,16 @@ void buttons_init(){
 //button interrupt function
 void IRAM_ATTR gpio_isr_handler(void* arg){
   ButtonEvent button_pressed = (ButtonEvent)(uintptr_t)arg;
-  uint64_t now = esp_timer_get_time() / 1000;
+  uint64_t now = hal_get_time_ms();
   int button_idx = button_pressed - 1;  // Assuming BUTTON_1=1, BUTTON_2=2
   if(now - last_button_time[button_idx] < DEBOUNCE_TIME_MS) return;
   last_button_time[button_idx] = now;
-
+  
+  if(button_pressed == BUTTON_1){
+    slide_forward();
+  }else if(button_pressed == BUTTON_2){
+    slide_hold();
+  }else if(button_pressed == BUTTON_3){
+    slide_backward();
+  }
 }

@@ -17,6 +17,10 @@
 #define RET_PIN  25 // GPIO OUT // Hardware Reset
 #define BUSY_PIN 33 // GPIO IN
 
+//LEDS
+#define RED_LED_PIN 16
+#define YEL_LED_PIN 17
+
 
 
 #endif

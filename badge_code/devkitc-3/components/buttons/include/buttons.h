@@ -11,6 +11,9 @@ typedef enum {
   NA = 4,
 } ButtonEvent;
 
+void slide_hold();
+void slide_forward();
+void slide_backward();
 
 void buttons_init();
 

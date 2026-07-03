@@ -1,4 +1,5 @@
 #include <stdint.h>
+
 #include "board.h"
 #include "freertos/FreeRTOS.h"
 
@@ -7,6 +8,7 @@
 #include "rom/ets_sys.h"
 #include "esp_err.h"
 #include "esp_log.h"
+#include "esp_timer.h"
 
 #include "hal.h"
 
@@ -96,6 +98,11 @@ void hal_init(){
 
     gpio_install_isr_service(0);
 
+    //Configure LED Pins
+    gpio_reset_pin(RED_LED_PIN);
+    gpio_set_direction(RED_LED_PIN, GPIO_MODE_OUTPUT);
+    gpio_reset_pin(YEL_LED_PIN);
+    gpio_set_direction(YEL_LED_PIN, GPIO_MODE_OUTPUT);
 }
 
 void hal_gpio_register_callback(uint8_t pin, void *callback, void *args){
@@ -124,4 +131,9 @@ void hal_delay_us(uint32_t us){
 
 void hal_delay_ms(uint32_t ms){
     vTaskDelay(ms / portTICK_PERIOD_MS);
+}
+
+uint64_t hal_get_time_ms(){
+
+    return esp_timer_get_time() / 1000;
 }

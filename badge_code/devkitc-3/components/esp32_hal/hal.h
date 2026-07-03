@@ -14,6 +14,7 @@ void hal_init();
 //General
 void hal_delay_us(uint32_t us);
 void hal_delay_ms(uint32_t ms);
+uint64_t hal_get_time_ms();
 
 //GPIO
 void hal_gpio_set(uint8_t pin, hal_gpio_out_t output);
