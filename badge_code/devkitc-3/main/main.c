@@ -16,13 +16,13 @@
 
 
 
-#define NUM_BITMAPS 2
+#define NUM_BITMAPS 3
 #define BETWEEN_SLIDES_MS 5000
 #define BETWEEN_BLINKS_MS 1000
 
 static const char *TAG = "MAIN";
 
-static const unsigned char *bitmap_arr[] = {irishsat_bitmap, gImage};
+static const unsigned char *bitmap_arr[] = {irishsat_bitmap, epd_bitmap_Nametag, epd_bitmap_website};
 volatile uint8_t bitmap_idx = 0;
 volatile uint8_t button_flag = 0;
 static uint32_t curr_time = 0;

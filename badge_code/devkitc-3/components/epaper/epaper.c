@@ -122,6 +122,7 @@ void epaper_init(){
 }
 
 void epaper_send_cmd(uint8_t cmd){
+    epaper_wait_busy();
     hal_gpio_set(DC_PIN, HAL_GPIO_LOW);
     hal_spi_send_byte(cmd);
     hal_gpio_set(DC_PIN, HAL_GPIO_HIGH);
@@ -153,6 +154,7 @@ void epaper_write_bitmap(const unsigned char *bitmap){
 }
 
 void epaper_push_frame(){
+    epaper_wait_busy();
     //set starting x address
     hal_gpio_set(CS_PIN, HAL_GPIO_LOW);
     epaper_send_cmd(SSD_CMD_RMXC);
@@ -175,6 +177,7 @@ void epaper_push_frame(){
 }
 
 void epaper_refresh(){
+    epaper_wait_busy();
     hal_gpio_set(CS_PIN, HAL_GPIO_LOW);
     epaper_send_cmd(SSD_CMD_DUC2);
     hal_spi_send_byte(DISP_1); 
@@ -183,10 +186,10 @@ void epaper_refresh(){
     hal_gpio_set(CS_PIN, HAL_GPIO_LOW);
     epaper_send_cmd(SSD_CMD_MA);
     hal_gpio_set(CS_PIN, HAL_GPIO_HIGH);
-    epaper_wait_busy();
 }
 
 void epaper_load_custom_lut(){
+    epaper_wait_busy();
     hal_gpio_set(CS_PIN, HAL_GPIO_LOW);
     epaper_send_cmd(SSD_CMD_LUTW);
     for(int i = 0; i < 70; i++){
