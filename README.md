@@ -2,15 +2,27 @@
 
 ## The Idea
 
-We create a custom and interactive badge for conventions. The badge would have at least a display and a lipo power supply and some cool designs on the pcb. It would also probably have buttons for interactivity and other fun things.
-
-- could have unpopulated vias for future modificaiton.
+To create a custom and interactive badge for conventions. The badge would have at least a display and a lipo power supply and some cool designs on the pcb. It would also probably have buttons for interactivity and other fun things.
 
 ## Design
 
-ESP32(C3?) microcontroller. PCB designed in KiCad. Programming done with espressif
+ESP32C3 microcontroller. PCB designed in KiCad. Programming done with espressif
 
-ESPRESSIF has layouts of their breakout boards. We can copy and then modify a development board layout. 
+### V1
+
+This design features a basic form factor supporting the XIAO esp32c3 devboard along with a 2.9 inch display module. The design was never actually manufactured.
+
+### V2
+
+The V2 board was designed to serve as both a badge and a dev board. It hosts the esp32c3, has support for USB power and flashing, has a battery managment circuit, and various peripherals. The display circuitry still lies on a breakout board which is attached through header pins. It is designed to resemble a satelite.
+
+This design experience was particularly new/challenging because it was the first PCB design I made where I had to consider how parts and integrated circuits interact rather than wiring pin headers together. I also had to consider manufacturing requirements, part availability, and cost.
+
+After manufacturing this board through JLCPCB, I was able to flash the ESP32C3 over USBC and get my display, buttons, and leds working. However, there were a few mistakes within the battery managment circuit that made LiPo power unusable for this version. I was able to fix one to get battery charging working, but a misconfigured mosfet connection made powering the uC with the battery impossible without some reworking which I don't have the tools for. 
+
+Code at this stage is pretty scrappy as the main focus was on PCB design and just getting a prototype working.
+
+Overall, I consider this version great progress and a great step towards improving my PCB design skills. Even though the main complexity of the battery managment circuitry doesn't work, I know what to fix in my next revision. This was my first project where programming wasn't really the main focus and I feel that I have a solid understanding of what to expect the design process to look like in my next KiCad project. 
 
 ## KiCad
 
@@ -19,6 +31,12 @@ All relevant kicad files can be found in `convention_badge_kicad`. We'll probabl
 One reference we are using is Notre Dame's build-a-board workshop pcb design which features a working esp32-c3 breakout board design.
 
 Build-A-Board Credits: https://engineering.nd.edu/news/electrical-engineering-students-create-circuit-boards-in-inaugural-build-a-board-workshop/
+
+
+
+# Design Notes
+
+Everything below here is scattered notes from my dev process.
 
 
 ## Display options
