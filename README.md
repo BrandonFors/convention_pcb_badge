@@ -22,7 +22,21 @@ After manufacturing this board through JLCPCB, I was able to flash the ESP32C3 o
 
 Code at this stage is pretty scrappy as the main focus was on PCB design and just getting a prototype working.
 
-Overall, I consider this version great progress and a great step towards improving my PCB design skills. Even though the main complexity of the battery managment circuitry doesn't work, I know what to fix in my next revision. This was my first project where programming wasn't really the main focus and I feel that I have a solid understanding of what to expect the design process to look like in my next KiCad project. 
+Overall, I consider this version great progress and a great step towards improving my PCB design skills. Even though the main complexity of the battery managment circuitry doesn't work, I know what to fix in my next revision. This was my first project where programming wasn't really the main focus and I feel that I have a solid understanding of what to expect the design process to look like in my next KiCad project.
+
+### V3 
+
+Not Started.
+
+This version will ideally look more like a sattelite or whatever form factor represents my interests. It also may switch to a digital display to enable more interactivity than an e-ink offers. 
+
+Things that I had to rework/need to be fixed from V2:
+- N-Mosfet for power source switching must align with datasheet
+- Bulk capacitor added to display's power and GND. 
+- S1 on FS8205A must be connected to ground. 
+- Make lanyard hole a little smaller.
+- Research general rules on where to put bulk/decoupling capacitors in a design and what type of capacitors are needed in various scenarios. 
+
 
 ## KiCad
 

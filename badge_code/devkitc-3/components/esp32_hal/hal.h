@@ -7,7 +7,7 @@ typedef enum {
     HAL_GPIO_HIGH = 1
 }hal_gpio_out_t;
 
-#define SPI_SPEED 10000000
+#define SPI_SPEED 500000
 
 void hal_init();
 
