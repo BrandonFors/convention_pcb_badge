@@ -4322,25 +4322,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "Q"
-				(at 5.08 1.27 0)
+			(property "Reference" "Q1"
+				(at 8.89 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "PMOS"
-				(at 5.08 -1.27 0)
+			(property "Value" "AO3401A"
+				(at 6.35 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 				(at 5.08 2.54 0)
 				(effects
 					(font
@@ -4385,8 +4383,17 @@
 					(hide yes)
 				)
 			)
-			(property "Sim.Pins" "1=D 2=G 3=S"
+			(property "Sim.Pins" "1=G 2=S 3=D"
 				(at 0 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C20917"
+				(at 0 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4581,7 +4588,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4599,7 +4606,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4617,7 +4624,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5179,6 +5186,12 @@
 		(uuid "63e5cf03-fae3-43a4-8b69-f49dcbdb4f4f")
 	)
 	(junction
+		(at 59.69 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6741ae55-f2b3-49cf-a9ed-13a659cf7a82")
+	)
+	(junction
 		(at 129.54 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5231,6 +5244,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9c022e30-40de-4226-a4d9-8865d7e1e3eb")
+	)
+	(junction
+		(at 77.47 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aa884be8-ba4d-4b4c-aaee-256aeb9848b4")
 	)
 	(junction
 		(at 34.29 179.07)
@@ -5431,6 +5450,16 @@
 			(type default)
 		)
 		(uuid "0bf495b9-923f-4c28-ba73-afa9470120b3")
+	)
+	(wire
+		(pts
+			(xy 74.93 102.87) (xy 74.93 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c0fdc6f-3bb3-474f-83b3-9ffc705d43c2")
 	)
 	(wire
 		(pts
@@ -5734,6 +5763,16 @@
 	)
 	(wire
 		(pts
+			(xy 72.39 102.87) (xy 74.93 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "350f090b-c51d-4333-9dea-2510dfa632f5")
+	)
+	(wire
+		(pts
 			(xy 15.24 29.21) (xy 21.59 29.21)
 		)
 		(stroke
@@ -5771,6 +5810,16 @@
 			(type default)
 		)
 		(uuid "38fe9be1-99bf-4bb9-81ca-59a943ccf12f")
+	)
+	(wire
+		(pts
+			(xy 63.5 102.87) (xy 63.5 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3aa2d7ea-9bbd-4fc7-b91c-31064b8f13a2")
 	)
 	(wire
 		(pts
@@ -5871,6 +5920,16 @@
 			(type default)
 		)
 		(uuid "4263900f-a9c0-4330-8730-1c879bf63dbb")
+	)
+	(wire
+		(pts
+			(xy 59.69 96.52) (xy 59.69 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45f8f3d4-0f02-40f8-9cb2-922b87de2a76")
 	)
 	(wire
 		(pts
@@ -6914,6 +6973,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 93.98) (xy 77.47 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc168c02-ab95-4f33-bff8-8bbd7fa80baa")
+	)
+	(wire
+		(pts
 			(xy 52.07 116.84) (xy 60.96 116.84)
 		)
 		(stroke
@@ -6971,6 +7040,16 @@
 			(type default)
 		)
 		(uuid "c9f8540c-d027-4b52-8910-75102507df25")
+	)
+	(wire
+		(pts
+			(xy 63.5 96.52) (xy 59.69 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca87f782-b382-4bf0-b763-c4df86e2bdae")
 	)
 	(wire
 		(pts
@@ -7241,6 +7320,16 @@
 			(type default)
 		)
 		(uuid "fbd64da7-b052-4ab7-a7bf-a2b604833a9d")
+	)
+	(wire
+		(pts
+			(xy 67.31 102.87) (xy 63.5 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc9aaf66-865e-403e-b7c4-d0caed7f3eee")
 	)
 	(wire
 		(pts
@@ -8760,6 +8849,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small_US")
+		(at 69.85 102.87 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1ad3ee4e-ba2e-4e21-9325-bb9bd0cb98d8")
+		(property "Reference" "C12"
+			(at 69.977 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100uF"
+			(at 69.977 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:C_CASE-B-3528-21(mm)"
+			(at 69.85 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "capacitor, small US symbol"
+			(at 69.85 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C122271"
+			(at 69.85 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fb385078-7cee-400a-9106-66156856dbe5")
+		)
+		(pin "2"
+			(uuid "58287718-3dc8-4b25-9d9f-00a8571be8e8")
+		)
+		(instances
+			(project "convention_badge_pcb_v2"
+				(path "/78d9d3f2-d4fd-4baf-b65f-a1e04a215bde"
+					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x07_Pin")
 		(at 123.19 30.48 180)
 		(unit 1)
@@ -9770,7 +9936,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
+		(property "Sim.Pins" "1=G 2=S 3=D"
 			(at 133.35 74.93 0)
 			(effects
 				(font
